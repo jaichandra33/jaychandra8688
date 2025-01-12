@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order & Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff7043;
+            padding: 0.8rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #ff5733;
+        }
+
+        .menu-item p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .menu-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .menu-buttons a {
+            background-color: #ff5733;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-buttons a:hover {
+            background-color: #e64a19;
+        }
+        .menu-item button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        menu-item button:hover {
+            background-color: #e5533c;
+        }
+        footer {
+            text-align: center;
+            padding: 1.2rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DISH DASH</h1>
+        <p>Your favorite meals, just a click away!</p>
+    </header>
+
+   
+
+    <div class="container" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-buttons">
+            <a href="#veg">Veg</a>
+            <a href="#nonveg">Non-Veg</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#fastfood">Fast Food</a>
+            <a href="#drinks">Drinks</a>
+            <a href="#snacks">Snacks</a>
+        </div>
+        <div class="menu" id="veg">
+            <div class="menu-item">
+                <img src="./images/chickenmasal.jpeg" alt="Paneer Butter Masala">
+                <h3>Chicken masala</h3>
+                <p>spicy and Heady</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/vegcurry.jpeg" alt="Veg Biryani">
+                <h3>Mix Veg Curry</h3>
+                <p>stay fit and stay healthy</p>
+                        </div>
+            <div class="menu-item">
+                <img src="./images/desserts.jpeg" alt="Aloo Paratha">
+                <h3>Dessert's</h3>
+                <p> 50% off on deserts<br></p>
+            </div>
+            <div class="menu-item">
+                <img src="./natukodi.jpeg" alt="Paneer Butter Masala">
+                <h3>Ragi Sankati Natukodi pulusu</h3>
+                <p>Rich and creamy</p>
+            </div>
+            <div class="menu-item">
+                <img src="./images/butter.jpeg" alt="Paneer Butter Masala">
+                <h3>Paneer Butter Masala</h3>
+                <p>Rich and creamy</p>
+            </div>
+            <div class="menu-item">
+                <img src="./smooth.jpeg" alt="Mix Veg Curry">
+                <h3>Smoothie's</h3>
+                <p>healthy smoothies</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Food Order & Delivery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
